@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>test plugin</title>
+<style>
+body {
+	background-color: black;
+}
+	.sequence-container {
+		position: relative;
+		width: 600px;
+		height: 650px;
+		overflow: hidden;
+	}
+</style>
+</head>
+<body>
+	<div class="sequence-container">
+		<img src="weapon_recycle/weapon_recycle_00000.png" />
+		<img src="weapon_recycle/weapon_recycle_00001.png" />
+		<img src="weapon_recycle/weapon_recycle_00002.png" />
+		<img src="weapon_recycle/weapon_recycle_00003.png" />
+		<img src="weapon_recycle/weapon_recycle_00004.png" />
+		<img src="weapon_recycle/weapon_recycle_00005.png" />
+		<img src="weapon_recycle/weapon_recycle_00006.png" />
+		<img src="weapon_recycle/weapon_recycle_00007.png" />
+		<img src="weapon_recycle/weapon_recycle_00008.png" />
+		<img src="weapon_recycle/weapon_recycle_00009.png" />
+		<img src="weapon_recycle/weapon_recycle_00010.png" />
+		<img src="weapon_recycle/weapon_recycle_00011.png" />
+		<img src="weapon_recycle/weapon_recycle_00012.png" />
+		<img src="weapon_recycle/weapon_recycle_00013.png" />
+		<img src="weapon_recycle/weapon_recycle_00014.png" />
+		<img src="weapon_recycle/weapon_recycle_00015.png" />
+		<img src="weapon_recycle/weapon_recycle_00016.png" />
+		<img src="weapon_recycle/weapon_recycle_00017.png" />
+		<img src="weapon_recycle/weapon_recycle_00018.png" />
+		<img src="weapon_recycle/weapon_recycle_00019.png" />
+		<img src="weapon_recycle/weapon_recycle_00020.png" />
+		<img src="weapon_recycle/weapon_recycle_00021.png" />
+		<img src="weapon_recycle/weapon_recycle_00022.png" />
+		<img src="weapon_recycle/weapon_recycle_00023.png" />
+		<img src="weapon_recycle/weapon_recycle_00024.png" />
+		<img src="weapon_recycle/weapon_recycle_00025.png" />
+		<img src="weapon_recycle/weapon_recycle_00026.png" />
+		<img src="weapon_recycle/weapon_recycle_00027.png" />
+		<img src="weapon_recycle/weapon_recycle_00028.png" />
+		<img src="weapon_recycle/weapon_recycle_00029.png" />
+		<img src="weapon_recycle/weapon_recycle_00030.png" />
+		<img src="weapon_recycle/weapon_recycle_00031.png" />
+		<img src="weapon_recycle/weapon_recycle_00032.png" />
+		<img src="weapon_recycle/weapon_recycle_00033.png" />
+		<img src="weapon_recycle/weapon_recycle_00034.png" />
+		<img src="weapon_recycle/weapon_recycle_00035.png" />
+		<img src="weapon_recycle/weapon_recycle_00036.png" />
+		<img src="weapon_recycle/weapon_recycle_00037.png" />
+		<img src="weapon_recycle/weapon_recycle_00038.png" />
+		<img src="weapon_recycle/weapon_recycle_00039.png" />
+		<img src="weapon_recycle/weapon_recycle_00040.png" />
+		<img src="weapon_recycle/weapon_recycle_00041.png" />
+		<img src="weapon_recycle/weapon_recycle_00042.png" />
+		<img src="weapon_recycle/weapon_recycle_00043.png" />
+		<img src="weapon_recycle/weapon_recycle_00044.png" />
+		<img src="weapon_recycle/weapon_recycle_00045.png" />
+		<img src="weapon_recycle/weapon_recycle_00046.png" />
+		<img src="weapon_recycle/weapon_recycle_00047.png" />
+		<img src="weapon_recycle/weapon_recycle_00048.png" />
+		<img src="weapon_recycle/weapon_recycle_00049.png" />
+		<img src="weapon_recycle/weapon_recycle_00050.png" />
+		<img src="weapon_recycle/weapon_recycle_00051.png" />
+		<img src="weapon_recycle/weapon_recycle_00052.png" />
+		<img src="weapon_recycle/weapon_recycle_00053.png" />
+		<img src="weapon_recycle/weapon_recycle_00054.png" />
+		<img src="weapon_recycle/weapon_recycle_00055.png" />
+		<img src="weapon_recycle/weapon_recycle_00056.png" />
+		<img src="weapon_recycle/weapon_recycle_00057.png" />
+		<img src="weapon_recycle/weapon_recycle_00058.png" />
+		<img src="weapon_recycle/weapon_recycle_00059.png" />
+		<img src="weapon_recycle/weapon_recycle_00060.png" />
+		<img src="weapon_recycle/weapon_recycle_00061.png" />
+		<img src="weapon_recycle/weapon_recycle_00062.png" />
+		<img src="weapon_recycle/weapon_recycle_00063.png" />
+		<img src="weapon_recycle/weapon_recycle_00064.png" />
+		<img src="weapon_recycle/weapon_recycle_00065.png" />
+		<img src="weapon_recycle/weapon_recycle_00066.png" />
+		<img src="weapon_recycle/weapon_recycle_00067.png" />
+		<img src="weapon_recycle/weapon_recycle_00068.png" />
+		<img src="weapon_recycle/weapon_recycle_00069.png" />
+		<img src="weapon_recycle/weapon_recycle_00070.png" />
+		<img src="weapon_recycle/weapon_recycle_00071.png" />		
+	</div>
+
+	<button>play</button>
+	<button>pause</button>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="../src/INHANCE_iSequencer.jquery.js"></script>
+	<script>
+		// attaching INHANCE_iSequencer
+		$('.sequence-container').INHANCE_iSequencer({
+			direction: 1, 
+			speed: 1,	// 0 ~ 1
+			initialAnimation: false
+		});	
+	
+
+		$('button:nth-of-type(1)').on('click', function() { 
+			// $('.sequence-container')[0].cleanup(); 
+			$('.sequence-container')[0].play();
+		});
+		$('button:nth-of-type(2)').on('click', function() { 
+			// $('.sequence-container')[0].cleanup(); 
+			$('.sequence-container')[0].pause();
+		});
+	</script>
+</body>
+</html>
